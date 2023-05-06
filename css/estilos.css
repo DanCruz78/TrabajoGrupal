@@ -1,5 +1,6 @@
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
@@ -63,7 +64,7 @@ li {
     background-image: url("../img/pantalla1.webp");
     position: relative;
 	width: 100%;
-	height: 35rem;
+	height: 45rem;
     background-size: cover;
     background-repeat: no-repeat; 
 	background-attachment: fixed;
@@ -75,7 +76,7 @@ li {
     background-image: url("../img/pantalla2.webp");
     position: relative;
 	width: 100%;
-	height: 35rem;
+	height: 45rem;
     background-size: cover;
     background-repeat: no-repeat; 
 	background-attachment: fixed;
@@ -88,7 +89,7 @@ li {
 	position: relative;
 	padding: 0rem 1rem;
     width: 100%;
-	height: 40rem;
+	height: auto;
 }
 
 .forma-h1 {
@@ -97,9 +98,56 @@ li {
     color:white;
     text-shadow: 2px 2px grey;
     text-align: right;
-    font-family: 'Shadows Into Light', ;
-    
+    font-family: 'Shadows Into Light', ;   
 }
+
+#acordeon {
+    margin: 40px auto;
+    width: 100%;
+    min-height: 50px;
+    background-color: gainsboro;
+    border-radius: 5px;
+}
+
+.subapartado {
+    width: 100%;
+    min-height: 50px;
+    background-color: #6A8380;
+}
+
+.cabecera {
+    width: 100%;
+    height: 50px;
+    background-color: #AAB5AD;
+    overflow: hidden;
+    border-bottom: 2px solid #6A8380;;
+}
+
+.titulo {
+    margin: auto;
+}
+
+.info {
+    width: 100%;
+    height: 0px;
+    background-color: gainsboro;
+    overflow: hidden;
+    transition: height 0.2s;
+}
+
+.datos {
+    margin: 5px;
+    text-align: justify;
+    color: #022144;
+}
+
+.subapartado:hover {
+    color: darkcyan; 
+ }
+ 
+ .subapartado:hover .info {
+     height: 180px;    
+ }
 
 
 /* Botones ------------------------------------------------*/
