@@ -2,6 +2,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 }
 
 h1, p {
@@ -48,7 +49,16 @@ nav ul li a {
     text-decoration: none;
 }
 
-/* pantalla */
+ul {
+    list-style-position: inside;
+    list-style-type: circle;
+}
+
+li {
+    padding: 10px;
+}
+
+/* Pantallas con imagenes ------------------------- */
 .pantalla1 {
     background-image: url("../img/pantalla1.webp");
     position: relative;
@@ -58,41 +68,41 @@ nav ul li a {
     background-repeat: no-repeat; 
 	background-attachment: fixed;
 	background-position: right;
-	z-index: 3;
+	z-index: 3;    
 }
 
+.pantalla2 {
+    background-image: url("../img/pantalla2.webp");
+    position: relative;
+	width: 100%;
+	height: 35rem;
+    background-size: cover;
+    background-repeat: no-repeat; 
+	background-attachment: fixed;
+	background-position: right;
+	z-index: 3;    
+}
+
+/* Contenedores de pantallas -------------------------- */
 .container {
 	position: relative;
 	padding: 0rem 1rem;
     width: 100%;
-	height: 45rem;
-}
-
-.forma-red {
-    margin: 5rem auto;
-    padding: 5rem;
-    background-color: #D84F3D;
-    width: 100%;
-    height: 15rem;
-    display: inline-flex;
-   
+	height: 40rem;
 }
 
 .forma-h1 {
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 4rem;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-size: 3rem;
     color:white;
     text-shadow: 2px 2px grey;
+    text-align: right;
+    font-family: 'Shadows Into Light', ;
+    
 }
 
-.forma-img {
-	width: 20%;
-	height: 10rem;
-    padding-bottom: 3rem;
-    background-repeat: no-repeat; 
-}
 
-/* Botones */
+/* Botones ------------------------------------------------*/
 .boton {
 	display: inline-block;
 	cursor: pointer;
@@ -109,6 +119,7 @@ nav ul li a {
 	background-color: #350B1F;
 	-webkit-transition: 0.45s;
 	transition: 0.45s;
+    
 }
 .boton:hover {
 	color: #ffffff;
