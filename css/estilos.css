@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,23 +6,44 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 }
 
-html{
+html {
     scroll-behavior: smooth;
     /* cuando nos lleva a un ancla lo hace delicadamente */
 }
 
 
-h1, p {
+
+h1 {
     padding: 1rem;
+
+    font-size: 2em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
+
+p {
+    padding: 1rem;
+
+    font-size: 1.em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+ul li{
+        font-size: 1.em;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+}
+
+
 
 header {
     width: 100%;
     clear: both;
-    display: table;    
+    display: table;
     position: sticky;
-	top: 0;
-	z-index: 5;
+    top: 0;
+    z-index: 5;
     background-color: rgb(255, 255, 255);
     box-shadow: 4px 4px 0px 0px rgba(53, 11, 31, 0.795);
 }
@@ -32,16 +53,18 @@ header {
     animation-duration: 3s;
     animation-name: slidein;
 }
+
 @keyframes slidein {
     from {
-      margin-left: 100%;
-      width: 300%
+        margin-left: 100%;
+        width: 300%
     }
+
     to {
-      margin-left: 0%;
-      width: 100%;
+        margin-left: 0%;
+        width: 100%;
     }
-  }
+}
 
 
 img {
@@ -54,13 +77,19 @@ img {
 nav {
     float: right;
 }
-nav a{
-    color: #495057;
+
+nav a {
+    color: #050505;
+    font-size: 1.em;
+    font-family: 'Poppins', sans-serif;
+    font-weight:400;
+
 }
+
 /* EFECTO NAV */
-nav :hover{
-    background:#495057;
-    color:#ffffff;
+nav :hover {
+    background: #495057;
+    color: #ffffff;
     border-radius: 5px;
 }
 
@@ -68,8 +97,7 @@ nav ul li {
     list-style: none;
     margin: 25px;
     float: left;
-    padding: 8
-    px 0;
+    padding: 8 px 0;
 }
 
 nav ul li a {
@@ -89,49 +117,49 @@ li {
 .pantalla1 {
     background-image: url("../img/pantalla1.webp");
     position: relative;
-	width: 100%;
-	height: 45rem;
+    width: 100%;
+    height: 45rem;
     background-size: cover;
-    background-repeat: no-repeat; 
-	background-attachment: fixed;
-	background-position: right;
-	z-index: 3;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    z-index: 3;
 }
 
 .pantalla2 {
     background-image: url("../img/pantalla2.webp");
     position: relative;
-	width: 100%;
-	height: 45rem;
+    width: 100%;
+    height: 45rem;
     background-size: cover;
-    background-repeat: no-repeat; 
-	background-attachment: fixed;
-	background-position: right;
-	z-index: 3;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    z-index: 3;
 }
 
 .pantalla3 {
     background-image: url("../img/pantalla2.webp");
     position: relative;
-	width: 100%;
-	height: 45rem;
+    width: 100%;
+    height: 45rem;
     background-size: cover;
-    background-repeat: no-repeat; 
-	background-attachment: fixed;
-	background-position: right;
-	z-index: 3;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    z-index: 3;
 }
 
 .pantalla4 {
     background-image: url("../img/pantalla2.webp");
     position: relative;
-	width: 100%;
-	height: 45rem;
+    width: 100%;
+    height: 45rem;
     background-size: cover;
-    background-repeat: no-repeat; 
-	background-attachment: fixed;
-	background-position: right;
-	z-index: 3;    
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    z-index: 3;
 }
 
 
@@ -141,19 +169,19 @@ li {
 
 /* Contenedores de pantallas -------------------------- */
 .container {
-	position: relative;
-	padding: 0rem 1rem;
+    position: relative;
+    padding: 0rem 1rem;
     width: 100%;
-	height: auto;
+    height: auto;
 }
 
 .forma-h1 {
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-size: 3rem;
-    color:whitesmoke;
-    text-shadow: 2px 2px grey;
+    color: rgb(20, 19, 19);
+    text-shadow: 2px 2px rgb(199, 198, 198);
     text-align: right;
-    font-family: 'Shadows Into Light', ;   
+    font-family: 'Shadows Into Light', ;
 }
 
 
@@ -176,7 +204,8 @@ li {
     height: 50px;
     background-color: #AAB5AD;
     overflow: hidden;
-    border-bottom: 2px solid #6A8380;;
+    border-bottom: 2px solid #6A8380;
+    ;
 }
 
 .titulo {
@@ -198,37 +227,38 @@ li {
 }
 
 .subapartado:hover {
-    color: darkcyan; 
- }
- 
- .subapartado:hover .info {
-     height: 180px;    
- }
+    color: darkcyan;
+}
+
+.subapartado:hover .info {
+    height: 180px;
+}
 
 
 /* Botones ------------------------------------------------*/
 .boton {
-	display: inline-block;
-	cursor: pointer;
-	text-align: center;
-	width: 100%;
-	margin: 2rem 0rem;
-	padding: 1rem 0rem;
-	border: none;
-	font-family: "Roboto", sans-serif;
-	font-size: 1rem;
-	font-weight: 900;
-	line-height: 1.375rem;
-	color: hwb(0 97% 2%);
-	background-color: #350B1F;
-	-webkit-transition: 0.45s;
-	transition: 0.45s;
-    
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0rem;
+    padding: 1rem 0rem;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 1.375rem;
+    color: hwb(0 97% 2%);
+    background-color: #350B1F;
+    -webkit-transition: 0.45s;
+    transition: 0.45s;
+
 }
+
 .boton:hover {
-	color: #ffffff;
-	background-image: linear-gradient(70deg, #AAB5AD, #022144);
-	box-shadow: 4px 4px 0px 0px rgba(148, 220, 198, 0.795);
+    color: #ffffff;
+    background-image: linear-gradient(70deg, #AAB5AD, #022144);
+    box-shadow: 4px 4px 0px 0px rgba(148, 220, 198, 0.795);
 }
 
 
@@ -239,38 +269,59 @@ li {
 /* FOOTER  ---------------------------------------------------------------------------- */
 
 
-footer{ 
+footer {
     background-color: #6A8380;
     /* Despues vemos tema color */
     height: 150px;
 }
 
-.container_footer{
+.container_footer {
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
 }
 
-footer p{
+footer p {
     margin: 50px;
     padding: 0px;
     color: rgb(247, 235, 235);
 }
 
-footer a{
+footer a {
     text-decoration: none;
     /* saca el subrayado */
 }
 
 
 /* href */
-a:link {color: #030303;} /*Color del link*/
-a:hover {background-color: rgba(84, 87, 84, 0.315); color: rgb(208, 223, 210);} /*Cuando paso mouse por arriba*/
-a:visited {color: rgba(0, 0, 0, 0.466);} /*Una vez visitado*/
-a:active {background-color: rgb(94, 55, 86); color: rgb(66, 94, 145);} /*Cuando doy click*/
+a:link {
+    color: #030303;
+}
+
+/*Color del link*/
+a:hover {
+    background-color: rgba(84, 87, 84, 0.315);
+    color: rgb(208, 223, 210);
+}
+
+/*Cuando paso mouse por arriba*/
+a:visited {
+    color: rgba(0, 0, 0, 0.466);
+}
+
+/*Una vez visitado*/
+a:active {
+    background-color: rgb(94, 55, 86);
+    color: rgb(66, 94, 145);
+}
+
+/*Cuando doy click*/
 
 /* Color al querer copy/paste de texto */
-p::selection{background-color: rgba(146, 74, 136, 0.315);}
-li::selection{background-color: rgba(146, 74, 136, 0.315);}
+p::selection {
+    background-color: rgba(146, 74, 136, 0.315);
+}
 
-
+li::selection {
+    background-color: rgba(146, 74, 136, 0.315);
+}
