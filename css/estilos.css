@@ -6,6 +6,12 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 }
 
+html{
+    scroll-behavior: smooth;
+    /* cuando nos lleva a un ancla lo hace delicadamente */
+}
+
+
 h1, p {
     padding: 1rem;
 }
@@ -104,6 +110,24 @@ li {
 	z-index: 3;    
 }
 
+.pantalla3 {
+    background-image: url("../img/pantalla2.webp");
+    position: relative;
+	width: 100%;
+	height: 45rem;
+    background-size: cover;
+    background-repeat: no-repeat; 
+	background-attachment: fixed;
+	background-position: right;
+	z-index: 3;    
+}
+
+
+
+
+
+
+
 /* Contenedores de pantallas -------------------------- */
 .container {
 	position: relative;
@@ -195,3 +219,47 @@ li {
 	background-image: linear-gradient(70deg, #AAB5AD, #022144);
 	box-shadow: 4px 4px 0px 0px rgba(148, 220, 198, 0.795);
 }
+
+
+
+
+
+
+/* FOOTER  ---------------------------------------------------------------------------- */
+
+
+footer{ 
+    background-color: #6A8380;
+    /* Despues vemos tema color */
+    height: 150px;
+}
+
+.container_footer{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+footer p{
+    margin: 50px;
+    padding: 0px;
+    color: rgb(247, 235, 235);
+}
+
+footer a{
+    text-decoration: none;
+    /* saca el subrayado */
+}
+
+
+/* href */
+a:link {color: #030303;} /*Color del link*/
+a:hover {background-color: rgba(84, 87, 84, 0.315); color: rgb(208, 223, 210);} /*Cuando paso mouse por arriba*/
+a:visited {color: rgba(0, 0, 0, 0.466);} /*Una vez visitado*/
+a:active {background-color: rgb(94, 55, 86); color: rgb(66, 94, 145);} /*Cuando doy click*/
+
+/* Color al querer copy/paste de texto */
+p::selection{background-color: rgba(146, 74, 136, 0.315);}
+li::selection{background-color: rgba(146, 74, 136, 0.315);}
+
+
