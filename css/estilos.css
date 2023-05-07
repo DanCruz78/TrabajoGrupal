@@ -23,8 +23,19 @@ header {
 
 .menu {
     width: 100%;
-    
+    animation-duration: 3s;
+    animation-name: slidein;
 }
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 
 img {
@@ -36,6 +47,15 @@ img {
 
 nav {
     float: right;
+}
+nav a{
+    color: #495057;
+}
+/* EFECTO NAV */
+nav :hover{
+    background:#495057;
+    color:#ffffff;
+    border-radius: 5px;
 }
 
 nav ul li {
@@ -95,11 +115,12 @@ li {
 .forma-h1 {
     /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     font-size: 3rem;
-    color:white;
+    color:whitesmoke;
     text-shadow: 2px 2px grey;
     text-align: right;
     font-family: 'Shadows Into Light', ;   
 }
+
 
 #acordeon {
     margin: 40px auto;
