@@ -7,21 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etiquetado Frontal</title>
 
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="icon" href="">
+
+    <!-- Favicon -->
+    <link rel="icon" href="docs/icono/icon_sinfondo.ico">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"rel="stylesheet">
+    
+
+
+
 </head>
 
 <body>
     <!-- Barra de Navegación -->
     <header>
         <div class="menu">
-            <img class="nav-logo" src="img/LOGO.svg" alt="logo">
+            <a href="index.html"><img class="nav-logo" src="img/LOGO.svg" alt="logo"></a>
             <nav>
                 <ul>
                     <li><a href="#ley">Ley</a></li>
                     <li><a href="#etiquetas">Etiquetas</a></li>
                     <li><a href="#multimedia">Multimedia</a></li>
-                    <li><a href="#">Elemento 4</a></li>
                     <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
@@ -65,7 +77,7 @@
                         analcohólicas de consumo humano en la República Argentina.</p>
                 </div>
 
-                <button class="boton">Ley 27.642 ir al texto completo de la norma</button>
+                <a href="https://www.boletinoficial.gob.ar/detalleAviso/primera/252728/20211112" target="_blank"><button class="boton">Ley 27.642 ir al texto completo de la norma</button></a>
             </div>
         </section>
 
@@ -227,12 +239,124 @@
             </div>
         </section>
 
-        <!-- Pantalla 3 Muestra la sección etiquetas-->
+        <!-- Pantalla 2 Muestra la sección etiquetas-->
         <section>
             <div class="pantalla3"></div>
         </section>
+        <section id="multimedia">
+            <div class="container">
+                <h1>Imagenes y vídeo</h1>
+            </div>
+        </section>
+
+        <!-- Pantalla 4 Muestra la sección contacto-->
+        <section>
+            <div class="pantalla4"></div>
+        </section>
+        <section id="contacto">
+            <div class="container">
+                <div class="contact_form">
+                <div class="formulario">			
+                    <h1>Formulario de contacto</h1>
+                        <form>				
+                            <p>
+                                <label for="nombre" class="colocar_nombre">Nombre
+                                    <span class="obligatorio">*</span>
+                                        </label>
+                                            <input type="text" name="introducir_nombre" id="nombre" placeholder="Escribe tu nombre">
+                            </p>
+                                    
+                            <p>
+                                <label for="email" class="colocar_email">Email
+                                    <span class="obligatorio">*</span>
+                                        </label>
+                                            <input type="email" name="introducir_email" id="email" placeholder="Escribe tu Email">
+                            </p>			
+                            <p>
+                                <label for="asunto" class="colocar_asunto">Asunto
+                                    <span class="obligatorio">*</span>
+                                        </label>
+                                            <input type="text" name="introducir_asunto" id="assunto" placeholder="Escribe un asunto">
+                            </p>		
+                            <p>
+                                <label for="mensaje" class="colocar_mensaje">Mensaje
+                                    <span class="obligatorio">*</span>
+                                        </label>                     
+                                            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" placeholder="Deja aquí tu comentario..."></textarea> 
+                            </p>	  								
+                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                            <p class="aviso">
+                                <span class="obligatorio"> * </span>los campos son obligatorios.
+                            </p>					
+                                
+                        </form>
+                </div>	
+            </div>
+            </div>
+        </section>
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Pantalla 4  - sección final-->
+        <section>
+            <div class="pantalla4"></div>
+        </section>
+
+        <section class="seccion_final">
+
+            <!-- El target_ al hacer click va a otra pestaña -->
+
+            <p class="gobierno_ciudad"> Para más información dirigirse a la <a href="https://www.argentina.gob.ar/normativa/nacional/356607/texto" target="_blank"  >página</a> del Gobierno de la Ciuad</p>
+
+            <p> Para descargar la normativa completa presione <a href="docs/ley_27642_pdf.pdf" target="_blank" download> aquí</a></p>
+
+
+        </section>
+        <!-- Fin pantalla 4  - sección final-->
+
+
+
+
     </main>
+    
+
+
+
     <footer>
+
+        <div class="container_footer">
+            <div>
+                <p> &copy; 2023 - Proyecto realizado para <a href="https://buenosaires.gob.ar/educacion/codocodo/el-programa" target="_blank"> Codo a Codo </a></p>
+                </div>
+        
+        
+                 <div>
+                    <p> <a href="https://github.com/DanCruz78" target="_blank"> <img src="img/github_icon.png" alt=""> Daniela </a> 
+                        <a href=" https://github.com/LuciaLopezOrdines" target="_blank"> <img src="img/github_icon.png" alt=""> Lucía </a>   
+                        <a href="https://github.com/Sorayamp" target="_blank"> <img src="img/github_icon.png" alt=""> Soraya </a>
+                    </p>
+
+                 </div>
+
+        </div>
+
+ 
+        
+
+
 
     </footer>
 </body>
