@@ -73,37 +73,38 @@ img {
 
 
 
+/* HREF NAV */
 
-/* HREF */
-
-
-a:link {
-    color: #030303;
-}
 
 /*Color del link*/
-a:hover {
-    background-color: rgba(84, 87, 84, 0.315);
-    color: rgb(208, 223, 210);
+.estilo_nav:hover{
+    background-color: #030303;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
 }
 
 /*Cuando paso mouse por arriba*/
-a:visited {
+
+.estilo_nav:visited {
     color: rgba(0, 0, 0, 0.466);
 }
-
 /*Una vez visitado*/
-a:active {
-    background-color: rgb(94, 55, 86);
-    color: rgb(66, 94, 145);
-}
 
+.estilo_nav:active {
+    background-color: rgb(189, 185, 188);
+    color: rgb(0, 0, 0);
+}
 /*Cuando doy click*/
 
-/* Color al querer copy/paste de texto */
+
+
+/* Selección de texto */
+
+
 p::selection {
     background-color: rgba(146, 74, 136, 0.315);
 }
+/* Color al querer copy/paste de texto */
 
 li::selection {
     background-color: rgba(146, 74, 136, 0.315);
@@ -116,9 +117,8 @@ li::selection {
 
 
 
+
 /* HEADER */
-
-
 
 
 header {
@@ -176,11 +176,7 @@ nav a {
 
 
 /* EFECTO NAV */
-nav :hover {
-    background:rgba(244, 245, 244, 0.315);
-    color: #ffffff;
-    border-radius: 5px;
-}
+
 
 nav ul li {
     list-style: none;
@@ -438,7 +434,9 @@ label{
 	float: center; 	
 }
 
-button{
+
+
+.formulario_button{
 	height: 45px; 
     margin: 0 170px;
     text-align: center;
@@ -451,11 +449,7 @@ button{
 
 }
 
-button p{
-	color: #fff; 
-}
-
-span{
+.formulario_span_obligatorio{
 	color:#fbfbfb; 
 }
 
@@ -470,12 +464,15 @@ span{
 	font-size: 14px; 
 	color:#fbfbfb; 
 }
+/* aplica a todas las p del formulario */
 
 
 
 /* Para mas informacion (anteultima pantalla) */
 
-
+.seccion_final_a{
+    text-decoration: none;
+}
 
 
 
@@ -507,5 +504,30 @@ footer a {
     /* saca el subrayado */
 }
 
+/* HREF footer */
+
+.footer_a:link{
+    color: black;
+}
+
+/*Color del link*/
+.footer_a:hover{
+    background-color: #030303;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/*Cuando paso mouse por arriba*/
+
+.footer_a:visited {
+    color: rgba(0, 0, 0, 0.466);
+}
+/*Una vez visitado*/
+
+.footer_a:active {
+    background-color: rgb(189, 185, 188);
+    color: rgb(0, 0, 0);
+}
+/*Cuando doy click*/
 
 

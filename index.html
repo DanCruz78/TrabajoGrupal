@@ -36,10 +36,10 @@
             <a href="index.html"><img class="nav-logo" src="img/LOGO.svg" alt="logo"></a>
             <nav>
                 <ul>
-                    <li><a href="#ley">Ley</a></li>
-                    <li><a href="#etiquetas">Sellos     nutricionales </a></li>
-                    <li><a href="#multimedia">Multimedia</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a class="estilo_nav" href="#ley">Ley</a></li>
+                    <li><a class="estilo_nav" href="#etiquetas">Sellos     nutricionales </a></li>
+                    <li><a class="estilo_nav" href="#multimedia">Multimedia</a></li>
+                    <li><a class="estilo_nav" href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
@@ -311,7 +311,7 @@
         </section>
         <section id="multimedia">
             <div class="container">
-                <h1>Imagenes y vídeo</h1>
+                <h1>Multimedia</h1>
             </div>
         </section>
         <!-- Fin Pantalla 3 - sección Multimedia-->
@@ -357,9 +357,11 @@
                                         </label>                     
                                             <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" placeholder="Deja aquí tu comentario..."></textarea> 
                             </p>	  								
-                        <button type="submit" name="enviar_formulario" id="enviar"><p>Enviar</p></button>
+                        <button class="formulario_button" type="submit" name="enviar_formulario" id="enviar">
+                            <p class=>Enviar</p>
+                        </button>
                             <p class="aviso">
-                                <span class="obligatorio"> * </span>los campos son obligatorios.
+                                <span class="formulario_span_obligatorio"> * </span>los campos son obligatorios.
                             </p>					
                                 
                         </form>
@@ -367,18 +369,6 @@
             </div>
             </div>
         </section>
-
-
-
-
-        
-
-
-
-
-
-
-
 
 
 
@@ -392,9 +382,7 @@
 
             <!-- El target_ al hacer click va a otra pestaña -->
 
-            <p class="gobierno_ciudad"> Para más información dirigirse a la <a href="https://www.argentina.gob.ar/normativa/nacional/356607/texto" target="_blank"  >página</a> del Gobierno de la Ciuad</p>
-
-            <p> Para descargar la normativa completa presione  aquí</a></p>
+            <p class="gobierno_ciudad"> Para más información dirigirse a la <a  class="footer_a seccion_final_a" href="https://www.argentina.gob.ar/normativa/nacional/356607/texto" target="_blank"  >página</a> del Gobierno de la Ciuad</p>
 
 
         </section>
@@ -409,14 +397,14 @@
     <footer>
         <div class="container_footer">
             <div>
-                <p> &copy; 2023 - Proyecto realizado para <a href="https://buenosaires.gob.ar/educacion/codocodo/el-programa" target="_blank"> Codo a Codo </a></p>
+                <p> &copy; 2023 - Proyecto realizado para <a class="footer_a" href="https://buenosaires.gob.ar/educacion/codocodo/el-programa" target="_blank"> Codo a Codo </a></p>
                 </div>
         
         
                  <div>
-                    <p> <a href="https://github.com/DanCruz78" target="_blank"> <img src="img/github_icon.png" alt=""> Daniela </a> 
-                        <a href=" https://github.com/LuciaLopezOrdines" target="_blank"> <img src="img/github_icon.png" alt=""> Lucía </a>   
-                        <a href="https://github.com/Sorayamp" target="_blank"> <img src="img/github_icon.png" alt=""> Soraya </a>
+                    <p> <a class="footer_a" href="https://github.com/DanCruz78" target="_blank"> <img src="img/github_icon.png" alt=""> Daniela </a> 
+                        <a  class="footer_a" href=" https://github.com/LuciaLopezOrdines" target="_blank"> <img src="img/github_icon.png" alt=""> Lucía </a>   
+                        <a class="footer_a"  href="https://github.com/Sorayamp" target="_blank"> <img src="img/github_icon.png" alt=""> Soraya </a>
                     </p>
 
                  </div>
