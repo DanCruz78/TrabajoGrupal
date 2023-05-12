@@ -397,9 +397,15 @@ main p span{
 	border-radius: 10px;  
 	padding-top: 5px;
 	padding-bottom: 20px;  
-    background-color:#495057; 
+    background-color:#6A8380; 
     /* padding-left: 30px;  */
 
+}
+
+.grupo_formulario{
+    padding: 20px;
+    color: #fbfbfb;
+    font-weight: bold ;
 }
 
 input{
@@ -432,6 +438,7 @@ textarea{
 label{
   display: block; 
 	float: center; 	
+    
 }
 
 
@@ -441,12 +448,13 @@ label{
     margin: 0 170px;
     text-align: center;
 	text-transform: uppercase;
+    color: white;
 	background-color:#350B1F; 
 	border-style: white solid; 
 	border-radius: 10px;	
 	width: 120px;   
     cursor: pointer;
-
+    transition: .1s ease all;
 }
 
 .formulario_span_obligatorio{
@@ -464,6 +472,78 @@ label{
 	font-size: 14px; 
 	color:#fbfbfb; 
 }
+.grupo_input {
+    position: relative;
+}
+.grupo_textarea{
+    position: relative;
+}
+
+.formulario__input-error {
+	font-size: 3px;
+	margin: 0;
+    padding: 0 10px ;
+	display: none;
+    font-style: oblique;
+}
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario_validacion-estado {
+	position: absolute;
+	right: 14px;
+	bottom: 32px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+.formulario_grupo-correcto .formulario_validacion-estado{
+    color: #1ed12d;
+    opacity: 1;
+}
+.formulario_grupo-incorrecto .formulario_label{
+    color:#bb2929;
+    opacity: 1;
+}
+.formulario_grupo-incorrecto .formulario_validacion-estado{
+    color:#bb2929;
+    opacity: 1;
+}
+.formulario_grupo-incorrecto .formulario_input{
+    border: solid 3px #bb2929;
+}
+.formulario__mensaje {
+	height: 35px;
+	line-height: 2px;
+	background: #F66060;
+	padding: -5px 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	
+	align-items: center;
+}
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
 /* aplica a todas las p del formulario */
 
 
