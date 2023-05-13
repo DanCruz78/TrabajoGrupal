@@ -220,7 +220,7 @@ main p span{
 
 .pantalla3 {
     background-image: url("../img/pantalla4.jpg");
-    background-image: url("../img/pantalla3.webp");
+
     position: relative;
     width: 100%;
     height: 45rem;
@@ -232,7 +232,7 @@ main p span{
 }
 
 .pantalla4 {
-    background-image: url("../img/pantalla4.webp");
+    background-image: url("../img/pantalla3.webp");
     position: relative;
     width: 100%;
     height: 45rem;
@@ -423,7 +423,63 @@ main p span{
 /* Imagenes y video  */
 
 
+    .slider-frame {
+        width: 80%;
+        height: auto;
+        /* altura tomada automaticamente por la imagen */
+        margin:50px auto 0 ;
+        overflow: hidden;
+    }
+    
+    .slider-frame ul {
+        display: flex;
+        /* para que todas queden una al lado de la otra  (li es bloque)*/
+        padding: 0px;
+        width: 400%;
+        
+        animation: slide 100s infinite alternate ease-in-out;
+    }
+    
+    .slider-frame li {
+        width: 100%;
+        list-style: none;
+    }
+    
+    .slider-frame img {
+        width: 90%;
+    }
+    
+    @keyframes slide {
+        0% {margin-left: 0;}
+        10% {margin-left: 0;}
+        
+        10% {margin-left: -100%;}
+        20% {margin-left: -100%;}
+        
+        20% {margin-left: -200%;}
+        30% {margin-left: -200%;}
+        
+        30% {margin-left: -300%;}
+        40% {margin-left: -300%;}
 
+        40% {margin-left: -400%;}
+        50% {margin-left: -400%;}
+
+        50% {margin-left: -500%;}
+        60% {margin-left: -500%;}
+
+        60% {margin-left: -600%;}
+        70% {margin-left: -600%;}
+
+        70% {margin-left: -700%;}
+        80% {margin-left: -700%;}
+
+        80% {margin-left: -800%;}
+        90% {margin-left: -800%;}
+
+        90% {margin-left: -900%;}
+        100% {margin-left: -900%;}
+    }
 
 
 
