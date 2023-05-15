@@ -27,13 +27,10 @@ h1 {
     font-weight: 300;
 }
 
-
 p {
     padding: 1rem;
-    font-size: 1.em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
 }
+
 
 ul li{
         font-size: 1.em;
@@ -165,6 +162,12 @@ li {
     backdrop-filter: blur(13px);
 }
 
+.p_hero {
+    padding: 1rem;
+    font-size: 1.em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
 
 #hero_download{
     background-color: #ffffff;
@@ -188,10 +191,10 @@ li {
     font-weight: bolder;
 }
 
-main p span{
+/* main p span{
     font-weight: 400;
     color: red;
-}
+} */
 
 .hero_href{ text-decoration: none;
 
@@ -276,17 +279,11 @@ main p span{
 }
 
 
-.card figure{
-    justify-content: center;
+#card {
+    width: 40%; 
     padding-left: 3rem;
     padding-right: 3rem;
-    margin-left: 106px;
-    margin-top: 4px;
-}
-
-#card {
-    width: 40%;
-    margin-bottom: 20px;  
+    margin: 4px 106px;
 }
 
 .card h3 {
@@ -295,7 +292,7 @@ main p span{
 
 .card .box p {
     line-height: 1.5;
-    justify-content: center;
+       
 }
 
 
@@ -355,8 +352,6 @@ main p span{
     margin: 40px auto;
     width: 100%;
     min-height: 50px;
-    /* background-color: rgb(70, 11, 11); */
-    /* no se que cambia de color *********************************************************/
     border-radius: 5px;
 }
 
@@ -372,7 +367,7 @@ main p span{
     background-color: #ffffff;
     /* cambia color rectangulo */
     overflow: hidden;
-    border-bottom: 2px solid #070000;
+    border-bottom: 2px solid #7e7c7c99;
     /* cambia color linea divisoria */
     ;
 }
@@ -405,7 +400,8 @@ main p span{
 /* texto dentro */
 
 .subapartado:hover {
-    color: rgb(253, 0, 0);
+    color: rgb(167, 162, 162);
+    background-color: #e8e4e4;
 }
 /* color una vez seleccionado */
 
