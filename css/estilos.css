@@ -211,6 +211,18 @@ li {
 
 
 /* Pantallas con imagenes ------------------------- */
+.pantalla1 {
+    background-image: url("../img/pantalla1.webp");
+    position: relative;
+    width: 100%;
+    height: 35rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    z-index: 3;
+}
+
 .pantalla2 {
     background-image: url("../img/pantalla2.webp");
     position: relative;
