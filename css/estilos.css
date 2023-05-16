@@ -695,19 +695,24 @@ label{
 footer {
     background-color: #6A8380;
     /* Despues vemos tema color */
-    height: 150px;
+    height: 180px;
+    align-items: center;
 }
 
 .container_footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    
+}
+
+footer img {
+    margin: 5px 50px;
 }
 
 footer p {
-    margin: 50px;
-    padding: 0px;
+    padding: 10px;
     color: rgb(247, 235, 235);
+    text-align: center;
 }
 
 footer a {
