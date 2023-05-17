@@ -23,13 +23,10 @@ h1 {
     font-weight: 300;
 }
 
-
 p {
     padding: 1rem;
-    font-size: 1.em;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
 }
+
 
 ul li{
     font-size: 1.em;
@@ -37,7 +34,10 @@ ul li{
     font-weight: 400;
 }
 
-
+a {
+    text-decoration: none;
+    color: #000000;
+}
 
 
 
@@ -163,6 +163,12 @@ li {
     backdrop-filter: blur(13px);
 }
 
+.p_hero {
+    padding: 1rem;
+    font-size: 1.em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
 
 #hero_download{
     background-color: #ffffff;
@@ -186,10 +192,10 @@ li {
     font-weight: bolder;
 }
 
-main p span{
+/* main p span{
     font-weight: 400;
     color: red;
-}
+} */
 
 .hero_href{ text-decoration: none;
 
@@ -206,6 +212,17 @@ main p span{
 
 
 /* Pantallas con imagenes ------------------------- */
+.pantalla1 {
+    background-image: url("../img/pantalla1.webp");
+    position: relative;
+    width: 100%;
+    height: 35rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right;
+    z-index: 3;
+}
 
 .pantalla2 {
     background-image: url("../img/pantalla2.webp");
@@ -221,7 +238,6 @@ main p span{
 
 .pantalla3 {
     background-image: url("../img/pantalla4.jpg");
-
     position: relative;
     width: 100%;
     height: 45rem;
@@ -276,17 +292,11 @@ main p span{
 }
 
 
-.card figure{
-    justify-content: center;
+#card {
+    width: 40%; 
     padding-left: 3rem;
     padding-right: 3rem;
-    margin-left: 106px;
-    margin-top: 4px;
-}
-
-#card {
-    width: 40%;
-    margin-bottom: 20px;  
+    margin: 4px 106px;
 }
 
 .card h3 {
@@ -295,7 +305,7 @@ main p span{
 
 .card .box p {
     line-height: 1.5;
-    justify-content: center;
+       
 }
 
 
@@ -309,7 +319,30 @@ main p span{
     height: auto;
 }
 
+/* Botones ------------------------------------------------*/
+.boton {
+	display: inline-block;
+	cursor: pointer;
+	text-align: center;
+	width: 100%;
+	margin: 2rem 0rem;
+	padding: 1rem 0rem;
+	border: none;
+	font-family: "Roboto", sans-serif;
+	font-size: 1rem;
+	font-weight: 900;
+	line-height: 1.375rem;
+	color: hwb(0 97% 2%);
+	background-color: #350B1F;
+	-webkit-transition: 0.45s;
+	transition: 0.45s;
 
+}
+.boton:hover {
+	color: #ffffff;
+	background-image: linear-gradient(70deg, #AAB5AD, #022144);
+	box-shadow: 4px 4px 0px 0px rgba(148, 220, 198, 0.795);
+}
 
 
 /* Los protagonistas --------------------------------------- */
@@ -332,8 +365,6 @@ main p span{
     margin: 40px auto;
     width: 100%;
     min-height: 50px;
-    /* background-color: rgb(70, 11, 11); */
-    /* no se que cambia de color *********************************************************/
     border-radius: 5px;
 }
 
@@ -349,7 +380,7 @@ main p span{
     background-color: #ffffff;
     /* cambia color rectangulo */
     overflow: hidden;
-    border-bottom: 2px solid #070000;
+    border-bottom: 2px solid #7e7c7c99;
     /* cambia color linea divisoria */
     ;
 }
@@ -382,7 +413,8 @@ main p span{
 /* texto dentro */
 
 .subapartado:hover {
-    color: rgb(253, 0, 0);
+    color: rgb(167, 162, 162);
+    background-color: #e8e4e4;
 }
 /* color una vez seleccionado */
 
@@ -667,19 +699,24 @@ display: block;
 footer {
     background-color: #6A8380;
     /* Despues vemos tema color */
-    height: 150px;
+    height: 180px;
+    align-items: center;
 }
 
 .container_footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    
+}
+
+footer img {
+    margin: 5px 50px;
 }
 
 footer p {
-    margin: 50px;
-    padding: 0px;
+    padding: 10px;
     color: rgb(247, 235, 235);
+    text-align: center;
 }
 
 footer a {
