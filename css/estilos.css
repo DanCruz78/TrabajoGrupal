@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -6,8 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 }
-
-
 
 /* Generales */
 
@@ -21,7 +18,6 @@ html {
 
 h1 {
     padding: 1rem;
-
     font-size: 2em;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -36,9 +32,9 @@ p {
 }
 
 ul li{
-        font-size: 1.em;
-        font-family: 'Poppins', sans-serif;
-        font-weight: 400;
+    font-size: 1.em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
 }
 
 
@@ -55,7 +51,8 @@ ul li{
 header {
     width: 100%;
     clear: both;
-    display: table;
+    /* display: table; */
+    display:flex;
     position: sticky;
     top: 0;
     z-index: 5;
@@ -105,9 +102,13 @@ nav a {
 }
 
 
-
 /* EFECTO NAV */
-
+.estilo_nav:hover{
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+}
 
 nav ul li {
     list-style: none;
@@ -490,16 +491,14 @@ main p span{
 
 /* FORMULARIO ----------------------------------------------------*/
 .contact_form{
-	/* width: 460px;  */
+    width: 460px; 
     align-items: center;
     height: auto;
-    margin: 50px 430px;
-	border-radius: 10px;
-	padding-top: 5px;
-	padding-bottom: 20px;
+    margin: auto;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 20px;
     background-color:#495057;
-    /* padding-left: 30px;  */
-
 }
 
 .grupo_formulario{
@@ -509,67 +508,67 @@ main p span{
 }
 
 input{
-	background-color: #fbfbfb;
-	width: 408px;
-	height: 40px;
-	border-radius: 5px;
-	border-style: solid;
-	border-width: 1px;
-	border-color:#fbfbfb;
-	margin-top: 10px;
-	padding-left: 10px;
-  margin-bottom: 20px;
+    background-color: #fbfbfb;
+    width: 408px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#fbfbfb;
+    margin-top: 10px;
+    padding-left: 10px;
+margin-bottom: 20px;
 }
 
 textarea{
-  background-color: #fbfbfb;
-	width: 405px;
-	height: 150px;
-	border-radius: 5px;
-	border-style: solid;
-	border-width: 1px;
-	border-color:#fbfbfb;
-	margin-top: 10px;
-	padding-left: 10px;
-  margin-bottom: 20px;
-  padding-top: 15px;
+background-color: #fbfbfb;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color:#fbfbfb;
+    margin-top: 10px;
+    padding-left: 10px;
+margin-bottom: 20px;
+padding-top: 15px;
 }
 
 label{
-  display: block;
-	float: center;
+display: block;
+    float: center;
 }
 
 
 
 .formulario_button{
-	height: 45px;
+    height: 45px;
     margin: 0 170px;
     text-align: center;
-	text-transform: uppercase;
+    text-transform: uppercase;
     color: white;
-	background-color:#350B1F; 
-	border-style: white solid; 
-	border-radius: 10px;	
-	width: 120px;   
+    background-color:#350B1F; 
+    border-style: white solid; 
+    border-radius: 10px;	
+    width: 120px;   
     cursor: pointer;
     transition: .1s ease all;
 }
 
 .formulario_span_obligatorio{
-	color:#fbfbfb;
+    color:#fbfbfb;
 }
 
 .formulario h1{
-	font-size: 39px;
-	text-align: letf;
-	padding-bottom: 20px;
-	color:#fbfbfb;
+    font-size: 39px;
+    text-align: left;
+    padding-bottom: 20px;
+    color:#fbfbfb;
 }
 
 .formulario p{
-	font-size: 14px;
-	color:#fbfbfb;
+    font-size: 14px;
+    color:#fbfbfb;
 }
 .grupo_input {
     position: relative;
@@ -579,23 +578,23 @@ label{
 }
 
 .formulario__input-error {
-	font-size: 3px;
-	margin: 0;
+    font-size: 3px;
+    margin: 0;
     padding: 0 10px ;
-	display: none;
+    display: none;
     font-style: oblique;
 }
 .formulario__input-error-activo {
-	display: block;
+    display: block;
 }
 
 .formulario_validacion-estado {
-	position: absolute;
-	right: 14px;
-	bottom: 32px;
-	z-index: 100;
-	font-size: 16px;
-	opacity: 0;
+    position: absolute;
+    right: 14px;
+    bottom: 32px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
 }
 .formulario_grupo-correcto .formulario_validacion-estado{
     color: #1ed12d;
@@ -612,35 +611,40 @@ label{
 .formulario_grupo-incorrecto .formulario_input{
     border: solid 3px #bb2929;
 }
+.formulario__mensaje,
+.formulario__grupo-btn-enviar {
+	grid-column: span 1;
+}
 .formulario__mensaje {
-	height: 35px;
-	line-height: 2px;
-	background: #F66060;
-	padding: -5px 15px;
-	border-radius: 3px;
-	display: none;
+    height: 35px;
+    line-height: 2px;
+    background: #F66060;
+    padding: -5px 15px;
+    border-radius: 3px;
+    display: none;
 }
 
 .formulario__mensaje-activo {
-	display: block;
+    display: block;
 }
 
 .formulario__mensaje p {
-	margin: 0;
+    margin: 0;
 }
 
 .formulario__grupo-btn-enviar {
-	
-	align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .formulario__mensaje-exito {
-	font-size: 14px;
-	color: #119200;
-	display: none;
+    font-size: 14px;
+    color: #119200;
+    display: none;
 }
 
 .formulario__mensaje-exito-activo {
-	display: block;
+    display: block;
 }
 
 /* aplica a todas las p del formulario */
@@ -713,4 +717,81 @@ footer a {
 
 li::selection {
     background-color: rgba(146, 74, 136, 0.315);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    *{
+        margin: auto;
+        box-sizing: border-box;
+        height: auto;
+    }
+
+    img {
+        width: 55px;
+        float: left;
+        padding: 0px;
+        margin: 8px 4px 4px 4px;
+    }
+    .menu{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+    .menu img{
+        margin: 8px 4px 0px 4px;
+    }
+    nav a {
+        font-size: 13px;
+    }
+    .estilo_nav:hover{
+        padding: 3px;
+        font-size: 10px;
+    }
+    nav ul li {
+        margin: 0px 10px;
+        padding: 12px 0px ;
+    }
+
+    .hero_container h1{
+        font-size: 40px;
+    }
+    .formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.formulario__mensaje,
+	.formulario__grupo-btn-enviar {
+		grid-column: 1;
+	}
+
+	.formulario__btn {
+		width: 100%;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 1199px){
+    *{
+       margin: auto;
+    }
+    nav{
+        margin: 30px auto;
+    }
+    nav a {
+        font-size: 1.em;
+    }
+    .estilo_nav:hover{
+        padding: 5px;
+        font-size: 15px;
+    }
+    nav ul li {
+        margin: auto 10px;
+        padding: 12px 0px ;
+    }
+    .hero_container h1{
+        font-size: 3rem;
+    }
+}
+@media only screen and (min-width: 1200px){
+
 }
