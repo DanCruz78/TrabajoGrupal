@@ -28,7 +28,7 @@
     <!-- Barra de Navegación -->
     <header>
         <div class="menu">
-            <a href="index.html"><img class="nav-logo" src="img/LOGO.svg" alt="logo" id="logo"></a>
+            <a href="index.html"><img class="nav_logo" src="img/LOGO.svg" alt="logo" id="logo"></a>
             <nav>
                 <ul>
                     <li><a class="estilo_nav" href="#ley">Ley</a></li>
@@ -50,8 +50,11 @@
                     <div class="text_img_header">
                         <a class="hero_href" href="/TrabajoGrupal/docs/ley_27642_pdf.pdf" target="_blank" download>
                             <p class="p_hero">
-                                <img id="hero_download" src="/TrabajoGrupal/img/download.png" alt=""> Ley Nº
-                                <span> 27.642</span>
+                                <div class="download">
+                                    <img id="hero_download" src="/TrabajoGrupal/img/download.png" alt=""> Ley Nº  
+                                <span class="hero_span"> 27.642</span>
+                                </div>
+                                
                             </p>
                         </a>
                     </div>
@@ -117,9 +120,7 @@
                     importen, pongan su marca o integren la cadena de comercialización de alimentos y bebidas
                     analcohólicas de consumo humano en la República Argentina.</p>
 
-                <a href="https://www.argentina.gob.ar/normativa/nacional/ley-27642-356607/texto" target="_blank">
-                    <button class="boton">Ley 27.642 ir al texto completo de la norma</button></a>
-            </div>
+
 
             <!-- IFRAME -->
             <!-- <iframe width="1903" height="838" src="https://www.youtube.com/embed/GPedJ39-mZo" title="Los 30 años de ANMAT en el CCK" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
@@ -301,21 +302,109 @@
         <section>
             <div class="pantalla3"></div>
         </section>
-        <section id="multimedia">
+
+        <section>
+            
             <h1>Multimedia</h1>
-            <div class="slider-frame">
-                <ul>
-                    <li><img src="img/galeria/img1.jpeg" alt=""></li>
-                    <li><img src="img/galeria/img2.jpeg" alt=""></li>
-                    <li><img src="img/galeria/img3.jpeg" alt=""></li>
-                    <li><img src="img/galeria/img4.jpeg" alt=""></li>
-                    <li><img src="img/galeria/img5.jpeg" alt=""></li>
-                    <li><img src="img/galeria/img6.jpeg" alt=""></li>
-                    <li><img src="img/galeria/img7.jpeg" alt=""></li>
-                    <li><img src="img/galeria/img9.jpeg" alt=""></li>
-                    <li><img src="img/galeria/img10.jpeg" alt=""></li>
-                </ul>
-            </div>
+
+            <div class="multimedia_grid_container">
+                <div
+                  class="multimedia_grid_item tall"
+                  style="background-image: url('img/galeria/img1.jpeg')"
+                ></div>
+                <div
+                  class="multimedia_grid_item"
+                  style="
+                    background-image: url('img/galeria/img2.jpeg');
+                  "
+                ></div>
+          
+                <div
+                  class="multimedia_grid_item wide"
+                  style="
+                    background-image: url('img/galeria/img3.jpeg');
+                  "
+                ></div>
+                <div
+                  class="multimedia_grid_item"
+                  style="
+                    background-image: url('img/galeria/img4.jpeg');
+                  "
+                ></div>
+                <div
+                  class="multimedia_grid_item"
+                  style="
+                    background-image: url('img/galeria/img5.jpeg');
+                  "
+                ></div>
+                <div
+                  class="multimedia_grid_item"
+                  style="
+                    background-image: url('img/galeria/img6.jpeg');
+                  "
+                ></div>
+                <div
+                  class="multimedia_grid_item"
+                  style="
+                    background-image: url('img/galeria/img7.jpeg');
+                  "
+                ></div>
+                <div
+                  class="multimedia_grid_item"
+                  style="background-image: url('img/galeria/img8.jpeg')"
+                ></div>
+                <div
+                  class="multimedia_grid_item tall wide"
+                  style="
+                    background-image: url('img/galeria/img9.jpeg');
+                  "
+                ></div>
+                <div
+                  class="multimedia_grid_item"
+                  style="
+                    background-image: url('img/galeria/img10.jpeg');
+                  "
+                ></div>
+                <div
+                  class="multimedia_grid_item"
+                  style="
+                    background-image: url('img/galeria/img11.jpeg');
+                  "
+                ></div>
+                <div
+                  class="multimedia_grid_item"
+                  style="
+                    background-image: url('img/galeria/img1.jpeg');
+                  "
+                ></div>
+                <div
+                  class="multimedia_grid_item"
+                  style="
+                    background-image: url('img/galeria/img1.jpeg');
+                  "
+                ></div>
+                <div
+                  class="multimedia_grid_item"
+                  style="
+                    background-image: url('img/galeria/img1.jpeg');
+                  "
+                ></div>
+                <div
+                  class="multimedia_grid_item"
+                  style="
+                    background-image: url('img/galeria/img1.jpeg');
+                  "
+                ></div>
+              </div>
+
+
+
+ 
+
+    
+
+
+
         </section>
         <!-- Fin Pantalla 3 - sección Multimedia-->
 
@@ -402,7 +491,7 @@
         <section class="seccion_final">
             <!-- El target_ al hacer click va a otra pestaña -->
             <p class="gobierno_ciudad"> Para más información dirigirse a la <a
-                    href="https://www.argentina.gob.ar/normativa/nacional/356607texto" class="footer_a seccion_final_a"
+                    href="https://www.argentina.gob.ar/normativa/nacional/ley-27642-356607/texto" class="footer_a seccion_final_a"
                     target="_blank">página del Gobierno de la Ciuadad</a></p>
         </section>
         <!-- Fin pantalla 5  - sección final-->

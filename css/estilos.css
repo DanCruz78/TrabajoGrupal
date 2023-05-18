@@ -81,7 +81,8 @@ header {
 }
 
 
-img {
+
+.nav_logo {
     width: 80px;
     float: left;
     padding: 2px;
@@ -192,10 +193,11 @@ li {
     font-weight: bolder;
 }
 
-/* main p span{
+.hero_span{
     font-weight: 400;
-    color: red;
-} */
+    color: rgb(250, 34, 34);
+    padding: 7px;
+}
 
 .hero_href{ text-decoration: none;
 
@@ -208,6 +210,19 @@ li {
 .hero_href:hover{
     background-color: #04209b73;}
 
+
+#hero_download{
+    width: 40px;
+    padding: 10px;
+    margin: 17px;
+
+}
+
+.download{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
@@ -456,65 +471,51 @@ li {
 /* Imagenes y video  */
 
 
-    .slider-frame {
-        width: 80%;
-        height: auto;
-        /* altura tomada automaticamente por la imagen */
-        margin:50px auto 0 ;
-        overflow: hidden;
-    }
-    
-    .slider-frame ul {
-        display: flex;
-        /* para que todas queden una al lado de la otra  (li es bloque)*/
-        padding: 0px;
-        width: 400%;
+
+.multimedia_grid_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #03afff;
+    border-radius: 4px;
+    transition: transform 0.3s ease-in-out;
+  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .multimedia_grid_item:hover {
+    filter: opacity(0.9);
+    transform: scale(1.04);
+  }
+  
+  .multimedia_grid_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: minmax(200px, auto);
+    gap: 20px;
+    padding: 20px;
+    grid-auto-flow: dense;
+  }
+
+
+      /*MULTIMEDIA*/
+
+      @media (min-width:600px) {
         
-        animation: slide 100s infinite alternate ease-in-out;
-    }
+      .wide {
+        grid-column: span 2;
+      }
     
-    .slider-frame li {
-        width: 100%;
-        list-style: none;
-    }
-    
-    .slider-frame img {
-        width: 90%;
-    }
-    
-    @keyframes slide {
-        0% {margin-left: 0;}
-        10% {margin-left: 0;}
-        
-        10% {margin-left: -100%;}
-        20% {margin-left: -100%;}
-        
-        20% {margin-left: -200%;}
-        30% {margin-left: -200%;}
-        
-        30% {margin-left: -300%;}
-        40% {margin-left: -300%;}
+    .tall {
+        grid-row: span 2;
+      }
 
-        40% {margin-left: -400%;}
-        50% {margin-left: -400%;}
-
-        50% {margin-left: -500%;}
-        60% {margin-left: -500%;}
-
-        60% {margin-left: -600%;}
-        70% {margin-left: -600%;}
-
-        70% {margin-left: -700%;}
-        80% {margin-left: -700%;}
-
-        80% {margin-left: -800%;}
-        90% {margin-left: -800%;}
-
-        90% {margin-left: -900%;}
-        100% {margin-left: -900%;}
     }
 
-
+ 
 
 
 
@@ -709,8 +710,13 @@ footer {
     
 }
 
+
 footer img {
-    margin: 5px 50px;
+    margin: 8px 4px 4px 4px;
+    padding: 0px;
+    float: left;
+    width: 55px;
+
 }
 
 footer p {
@@ -770,6 +776,7 @@ li::selection {
         padding: 0px;
         margin: 8px 4px 4px 4px;
     }
+
     .menu{
         display: grid;
         grid-template-rows: 1fr 1fr;
@@ -792,6 +799,7 @@ li::selection {
     .hero_container h1{
         font-size: 40px;
     }
+
     .formulario {
 		grid-template-columns: 1fr;
 	}
@@ -828,6 +836,10 @@ li::selection {
     .hero_container h1{
         font-size: 3rem;
     }
+
+    
+
+
 }
 @media only screen and (min-width: 1200px){
 
