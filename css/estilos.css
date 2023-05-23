@@ -797,32 +797,44 @@ li::selection {
         margin: 0px 10px;
         padding: 12px 0px ;
     }
-
+    .contact_form{
+        display:inline-block;
+        width:100%;
+    }
+    input{
+        width: 100%;
+    }
+    textarea{
+        width: 100%;
+    }
     .hero_container h1{
         font-size: 40px;
     }
     .formulario {
 		grid-template-columns: 1fr;
 	}
-
-	.formulario__mensaje,
-	.formulario__grupo-btn-enviar {
-		grid-column: 1;
-	}
-
-	.formulario__btn {
-		width: 100%;
-	}
+    .formulario__mensaje{
+        height: auto;
+        line-height: 15px;
+    }
+    .formulario_button{
+        width: 40%;
+        margin: 0px;
+    }
     .cartel{
         display: flex;
         flex-direction: column;
         max-width: 300px;
     }
+    .card{
+         margin: 40px 0;
+
+    }
     #card{
         width: 150px;
         height: 60px;
         text-align: center;
-        margin: 0px 65px 0px 65px;
+        margin: 0px 65px;
     }
     .subapartado:hover .info {
         height: auto;
