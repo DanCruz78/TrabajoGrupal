@@ -25,6 +25,8 @@ h1 {
 
 p {
     padding: 1rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
 }
 
 
@@ -49,7 +51,6 @@ a {
     margin: auto;
     height: auto;
     border: 1px solid transparent;
-
 }
 
 
@@ -283,7 +284,21 @@ li {
     font-family: 'Jost', sans-serif;
     font-weight: 400;
     font-size: 20px;
+    /* letter-spacing: .1rem; */
 }
+
+.etiquetado .box p{
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.etiquetado .etiquetado_lista ul{
+    font-family: 'Jost', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
 
 
 .etiquetado_extranegrita {
@@ -318,11 +333,8 @@ li {
     letter-spacing: -.15rem
 }
 
-.etiquetado_contenedor_aqueapunta {
+.etiquetado_contenedor_aqueapunta{
     margin: 170px 10px 0px;
-    /* border-left: 6px solid #000000;
-    background-color: #cccccc27; */
-
 }
 
 /* Objetivos */
@@ -338,6 +350,9 @@ li {
 
 }
 
+.margin_ob{
+    border: 1px solid transparent;
+}
 
 .ley_objetivos {
     display: flex;
@@ -632,6 +647,8 @@ li {
 }
 
 .datos {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
     margin: 5px;
     text-align: justify;
     color: #000000;
@@ -682,6 +699,89 @@ li {
 
 
 /* Imagenes y video  */
+
+
+
+.container_multimedia {
+    margin: 50px;
+    position: relative;
+    padding: 4rem 1rem;
+    max-width: 1400px;
+    border: 1px solid transparent;
+
+}
+
+.duda{
+    font-family: Montserrat, Helvetica, Times, serif;
+    font-size: 1.8rem;
+    font-weight: 200;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: .1rem
+}
+
+.etiquetado_fondo_3 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    font-family: Montserrat, Helvetica, Times, serif;
+    font-size: 1.5rem;
+    
+    
+
+
+
+    margin: 100px 70px 80px 70px;
+    border-left: 6px solid #3f3e3e;
+    background-color: #e8e4e4;
+    padding: 20px;
+    border-bottom: 1px solid transparent;
+}
+
+/* .highlightme { background-color:#ddac9d; } */
+
+.multimedia_titulo{
+    font-family: Montserrat, Helvetica, Times, serif;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: .2rem
+}
+
+.container_multimedia_2{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 200px 12px;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.img_container{
+    background-image: url("../img/galeria/imgclave.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px; 
+}
+
+.texto{
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
 
 
 
@@ -743,7 +843,7 @@ li {
     border-radius: 10px;
     padding-top: 5px;
     padding-bottom: 20px;
-    background-color: #495057;
+    background-color: #3f3e3e;
 }
 
 .grupo_formulario {
@@ -1011,12 +1111,12 @@ li::selection {
     }
 
     nav a {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .estilo_nav:hover {
         padding: 3px;
-        font-size: 10px;
+        font-size: 15px;
     }
 
     nav ul li {
@@ -1077,22 +1177,24 @@ li::selection {
 
 /* Medium devices (landscape tablets) */
 @media only screen and (min-width: 601px) and (max-width: 1199px) {
-    * {
+
+    /* * {
         margin: auto;
-    }
+    } */
 
     nav {
         margin: 30px auto;
     }
 
     nav a {
-        font-size: 1.em;
+        font-size: 1.2em;
     }
 
     .estilo_nav:hover {
         padding: 5px;
-        font-size: 15px;
+        font-size: 1.2em;
     }
+
 
     nav ul li {
         margin: auto 10px;
@@ -1101,6 +1203,21 @@ li::selection {
 
     .hero_container h1 {
         font-size: 3rem;
+    }
+
+    .download {
+        margin: 0px;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-content: center; 
+        align-items: center; 
+    }
+
+    .margin_ob{
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .cartel {
