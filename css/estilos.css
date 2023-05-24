@@ -155,7 +155,7 @@ li {
     flex-direction: column;
     height: 90vh;
     background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/pantalla2.webp");
-    /* background-position: center; */
+  
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -234,6 +234,7 @@ li {
 
 .download {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
@@ -254,10 +255,16 @@ li {
     letter-spacing: -.45rem
 }
 
-.etiquetado_borde {
-    border: 6px double;
-    margin: 130px;
+
+@media only screen and (min-width: 1200px) {
+
+    .etiquetado_borde {
+        border: 6px double;
+        margin: 105px;
+    }
+
 }
+
 
 .etiquetado_subtitulo {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -510,9 +517,25 @@ li {
     display: flex;
     width: 100%;
     max-width: 1500px;
+    margin-top: 80px;
+}
+
+.container_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#card {
+    width: 140px;
+    height: 50px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin: 4px 103px;
 }
 
 .card {
+    text-align: center;
     width: 100%;
     margin: 40px;
     border-radius: 6px;
@@ -531,14 +554,6 @@ li {
     background-color: #e8e4e462;
 }
 
-
-#card {
-    width: 140px;
-    height: 50px;
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin: 4px 103px;
-}
 
 .card h3 {
     text-align: center;
@@ -674,13 +689,12 @@ li {
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-color: #03afff;
     border-radius: 4px;
     transition: transform 0.3s ease-in-out;
 
     background-size: cover;
-    background-position: center;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
@@ -1023,6 +1037,7 @@ li::selection {
         font-size: 40px;
     }
 
+
     .formulario {
 		grid-template-columns: 1fr;
 	}
@@ -1092,6 +1107,7 @@ li::selection {
         display: flex;
         flex-direction: column;
         max-width: 380px;
+        align-items: center;
 
     }
 
@@ -1109,6 +1125,9 @@ li::selection {
         height: 100%;
         width: 100%;
     }
+
+
+
 
 
 }
