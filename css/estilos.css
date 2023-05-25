@@ -1175,14 +1175,14 @@ li::selection {
     .menu {
         display: grid;
         grid-template-rows: 1fr 1fr;
+
     }
 
     .menu img {
         margin: 8px 4px 0px 4px;
     }
-
     nav a {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .estilo_nav:hover {
@@ -1191,7 +1191,7 @@ li::selection {
     }
 
     nav ul li {
-        margin: 0px 10px;
+        margin: 0px;
         padding: 12px 0px;
     }
     .contact_form{
@@ -1244,6 +1244,19 @@ li::selection {
         height: 100%;
         width: 100%;
     }
+    .container_multimedia{
+        padding: 0;
+        margin: 0;
+    }
+    .container_multimedia_2{
+        padding: 0;
+    }
+    .etiquetado_fondo_3{
+        margin: 0;
+    }
+    .etiquetado_subtitulo{
+        width: 100%;
+    }
 }
 
 /* Medium devices (landscape tablets) */
@@ -1256,9 +1269,12 @@ li::selection {
     nav {
         margin: 30px auto;
     }
-
+    .estilo_nav{
+        padding: 0;
+        margin: auto 0px;
+    }
     nav a {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     .estilo_nav:hover {
